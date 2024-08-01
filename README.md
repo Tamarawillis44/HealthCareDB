@@ -17,6 +17,7 @@ Additionally, perform data analysis to extract meningful insights from the data.
 * PostgreSQL
 * pgAdmin / Valentina Studio
 
+
 # Database Schema
 
 # Tables
