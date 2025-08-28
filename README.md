@@ -5,7 +5,7 @@ Simple Project showcasing  my ability to create and manage a database, perform e
 
 ### Objective : 
 
-the goal of this  design and implement a comprehensive databse to manage patient information appointments, and medical records in the healthcare industry.
+the goal of this  design and implement a comprehensive database to manage patient information appointments, and medical records in the healthcare industry.
 Additionally, perform data analysis to extract meningful insights from the data.
 
 # Skill Demonstrated:
@@ -105,7 +105,7 @@ VALUES
 ```SQL
   SELECT * FROM Patients;
 ```
-3. List all appointments
+2. List all appointments
 ```SQL
    SELECT a.AppointmentID, d.FirstName AS DoctorFirstName, d.LastName AS DoctorLastName, a.AppointmentDate, a.Reason
 FROM Appointments a
@@ -113,7 +113,7 @@ JOIN Doctors d ON a.DoctorID = d.DoctorID
 WHERE a.PatientID = 1;
 ```
 
-4. Get the count of appointments by each doctor:
+3. Get the count of appointments by each doctor:
 ```SQL
    SELECT d.FirstName, d.LastName, COUNT(a.AppointmentID) AS AppointmentCount
 FROM Appointments a
@@ -121,7 +121,7 @@ JOIN Doctors d ON a.DoctorID = d.DoctorID
 GROUP BY d.DoctorID;
 ```
 
-6. Fetch medical records for a specific patients.
+4. Fetch medical records for a specific patients.
 ```SQL
 SELECT * FROM MedicalRecords WHERE PatientID =
 ```
